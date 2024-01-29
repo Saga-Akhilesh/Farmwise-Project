@@ -1,0 +1,374 @@
+.addFields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .userTypeSelect {
+    margin-bottom: 1rem;
+  }
+  
+  .userDropdown {
+    appearance: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .userDropdown:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #4caf50;
+  }
+  
+  .addFieldButtonWrapper {
+    margin-bottom: 1rem;
+  }
+  
+  .addFieldButton {
+    appearance: none;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .addFieldButton:hover {
+    background-color: #3e8e41;
+  }
+  
+  .fieldSelectWrapper {
+    margin-bottom: 1rem;
+  }
+  
+  .listAddedFields {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+    background-color: #f5f5f5;
+  }
+  .add-fields-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .user-type-select {
+    margin-bottom: 20px;
+  }
+  
+  .add-field-button-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .field-select-wrapper {
+    margin-bottom: 40px;
+  }
+  
+  .horizontal-rule {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  
+  .list-added-fields {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'><polygon points='0,0 7,7 14,0'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 8'><polygon points='0,0 7,7 14,0'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px 10px; /* adjust arrow size here */
+  }
+  select.fieldMandatory,
+select.fieldDataTypeDropdown {
+  padding: 10px 30px 10px 10px; /* add some space to the right of the select element */
+  background-position: right 35px center; /* move the down arrow to the right */
+}
+
+button {
+  padding: 10px 20px; /* add some space to the button text */
+}
+.dataValidationFieldsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px; /* add horizontal margin to compensate for negative margin on child elements */
+}
+
+.dataValidationFields,
+.submittedData {
+  flex: 1 0 300px; /* set minimum width of each section to 300px */
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dataValidationFields label,
+.dataValidationFields input,
+.dataValidationFields select {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.userTypeSelect {
+  margin-right: 16px;
+}
+
+.addFieldButtonWrapper {
+  margin-top: 16px;
+}
+
+.addFieldButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.addFieldButton:hover {
+  background-color: #3e8e41;
+}
+
+.addFieldButton:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.fieldSelectWrapper {
+  margin-top: 16px;
+}
+
+.listAddedFields {
+  margin-top: 32px;
+}
+.dataValidationFields select {
+  height: 38px;
+}
+
+.submittedData table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.submittedData th,
+.submittedData td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.submittedData th {
+  background-color: #f2f2f2;
+}
+.addFields h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.addFields .addFieldsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addFields .yellowRow {
+  background-color: yellow;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.addFields .fieldTable {
+  margin-top: 20px;
+}
+
+.addFields .addFieldButtonWrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.addFields .addFieldButtonWrapper .yellowRow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  text-align: center;
+}
+.addFields .yellowRow {
+  background-color: yellow;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.addFields .fieldTable {
+  margin-top: 20px;
+}
+
+.addFields .addFieldButtonWrapper {
+  position: relative;
+  margin-bottom:10px;
+}
+
+.addFields .addFieldButtonWrapper .yellowRow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  text-align: center;
+}
+.userDropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+ border-radius: 5;
+  background-color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px; /* Increase the width of the button */
+  position: relative;
+}
+
+.userDropdown .downArrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.userDropdown .downArrow::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid yellow;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fieldDropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ border-radius: 5px 10px;
+  background-color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin to the right of the button */
+}
+
+.fieldDropdown .downArrow {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.fieldDropdown .downArrow::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid yellow;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fieldLabel {
+  margin-right: 10px; /* Add margin to the right of the label */
+}
+.fieldDropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 5px;
+  backgroundcolor: yellow;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 200px; /* Increase the width of the button */
+}
+
+.fieldDropdown .downArrow {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.fieldDropdown .downArrow::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid yellow;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fieldLabel {
+  margin-right: 10px;
+}
